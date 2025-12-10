@@ -1,0 +1,363 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "TaskFlow Manager",
+    "companyName": "Hero Labs",
+    "id": 1,
+    "description": "A smart productivity tool that streamlines task planning and boosts daily efficiency through intuitive features and seamless organization.",
+    "size": 42,
+    "reviews": 15800,
+    "ratingAvg": 4.6,
+    "downloads": 920000,
+    "ratings": [
+      { "name": "1 star", "count": 420 },
+      { "name": "2 star", "count": 690 },
+      { "name": "3 star", "count": 1410 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 10700 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "CodeBuddy Editor",
+    "companyName": "Byte Factory",
+    "id": 2,
+    "description": "A powerful mobile code editor that helps developers write, debug, and manage projects efficiently from any device.",
+    "size": 55,
+    "reviews": 8450,
+    "ratingAvg": 4.4,
+    "downloads": 540000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 880 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 4720 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "FitTrack Pro",
+    "companyName": "HealthSync",
+    "id": 3,
+    "description": "A fitness tracking app that monitors workouts, calories, sleep, and health metrics to help users achieve long-term wellness.",
+    "size": 38,
+    "reviews": 29000,
+    "ratingAvg": 4.7,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 890 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2900 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 17600 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "FinanceGo",
+    "companyName": "NeoFintech",
+    "id": 4,
+    "description": "A smart financial tracking app that manages budgets, expenses, and financial insights to improve money management.",
+    "size": 49,
+    "reviews": 11200,
+    "ratingAvg": 4.3,
+    "downloads": 760000,
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 610 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 5270 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1542751110-97427bbecf20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "Learnify",
+    "companyName": "EduTech Global",
+    "id": 5,
+    "description": "An interactive learning platform offering thousands of courses with personalized recommendations for every learner.",
+    "size": 63,
+    "reviews": 20400,
+    "ratingAvg": 4.8,
+    "downloads": 3200000,
+    "ratings": [
+      { "name": "1 star", "count": 510 },
+      { "name": "2 star", "count": 830 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 4700 },
+      { "name": "5 star", "count": 13800 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "PhotoCraft Studio",
+    "companyName": "PixelWorks",
+    "id": 6,
+    "description": "A powerful photo editing app with filters, enhancement tools, and creative features for stunning visual designs.",
+    "size": 48,
+    "reviews": 17800,
+    "ratingAvg": 4.5,
+    "downloads": 1400000,
+    "ratings": [
+      { "name": "1 star", "count": 420 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 4300 },
+      { "name": "5 star", "count": 10780 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "DevDash",
+    "companyName": "StackForge",
+    "id": 7,
+    "description": "An advanced developer dashboard that offers project tracking, version control, and seamless collaboration tools.",
+    "size": 61,
+    "reviews": 9200,
+    "ratingAvg": 4.4,
+    "downloads": 680000,
+    "ratings": [
+      { "name": "1 star", "count": 260 },
+      { "name": "2 star", "count": 540 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 4100 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1509395176047-4a66953fd231?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "TravelMate",
+    "companyName": "GlobePath",
+    "id": 8,
+    "description": "A travel companion app offering trip planning, navigation, local recommendations, and budget-friendly travel guides.",
+    "size": 45,
+    "reviews": 25600,
+    "ratingAvg": 4.7,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 2400 },
+      { "name": "4 star", "count": 6200 },
+      { "name": "5 star", "count": 15000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "NoteSpace",
+    "companyName": "CloudVerse",
+    "id": 9,
+    "description": "A cloud-based note-taking app that keeps ideas organized with tags, folders, reminders, and real-time sync.",
+    "size": 33,
+    "reviews": 13400,
+    "ratingAvg": 4.5,
+    "downloads": 970000,
+    "ratings": [
+      { "name": "1 star", "count": 330 },
+      { "name": "2 star", "count": 590 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 3600 },
+      { "name": "5 star", "count": 7580 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "MindRelax",
+    "companyName": "ZenLabs",
+    "id": 10,
+    "description": "A meditation and relaxation app designed to reduce stress, improve sleep, and enhance mental clarity.",
+    "size": 29,
+    "reviews": 31800,
+    "ratingAvg": 4.8,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 5400 },
+      { "name": "5 star", "count": 23200 }
+    ]
+  },
+
+  {
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "MusicBox",
+    "companyName": "AudioWave",
+    "id": 11,
+    "description": "A seamless music streaming app offering playlists, offline mode, and personalized audio recommendations.",
+    "size": 52,
+    "reviews": 64000,
+    "ratingAvg": 4.6,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 2300 },
+      { "name": "2 star", "count": 3500 },
+      { "name": "3 star", "count": 7200 },
+      { "name": "4 star", "count": 15600 },
+      { "name": "5 star", "count": 35400 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "HomeControl",
+    "companyName": "SmartSpace",
+    "id": 12,
+    "description": "A smart home controller app that connects devices, automates routines, and enhances home security.",
+    "size": 46,
+    "reviews": 19800,
+    "ratingAvg": 4.4,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 760 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 4800 },
+      { "name": "5 star", "count": 9100 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "MealMaster",
+    "companyName": "KitchenSoft",
+    "id": 13,
+    "description": "A recipe and meal-planning app that helps users cook healthy dishes with step-by-step guidance.",
+    "size": 41,
+    "reviews": 15400,
+    "ratingAvg": 4.6,
+    "downloads": 890000,
+    "ratings": [
+      { "name": "1 star", "count": 380 },
+      { "name": "2 star", "count": 570 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 8850 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "WorkHub",
+    "companyName": "TeamSpace",
+    "id": 14,
+    "description": "A team collaboration app offering chat, tasks, file sharing, and time tracking in one platform.",
+    "size": 57,
+    "reviews": 22100,
+    "ratingAvg": 4.3,
+    "downloads": 1350000,
+    "ratings": [
+      { "name": "1 star", "count": 770 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 5700 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "LearnKids",
+    "companyName": "BrightMinds",
+    "id": 15,
+    "description": "An educational app for kids featuring games, quizzes, and interactive lessons for early learning.",
+    "size": 35,
+    "reviews": 17400,
+    "ratingAvg": 4.7,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 440 },
+      { "name": "2 star", "count": 610 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 4300 },
+      { "name": "5 star", "count": 10750 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "ArtStudioX",
+    "companyName": "CreativeBox",
+    "id": 16,
+    "description": "An advanced digital art app featuring brushes, layers, vector tools, and high-resolution export options.",
+    "size": 69,
+    "reviews": 12800,
+    "ratingAvg": 4.6,
+    "downloads": 720000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 470 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 3600 },
+      { "name": "5 star", "count": 8300 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "ChatSphere",
+    "companyName": "SocialSync",
+    "id": 17,
+    "description": "A modern messaging app with encrypted chat, group calls, cloud backup, and customizable themes.",
+    "size": 58,
+    "reviews": 66500,
+    "ratingAvg": 4.5,
+    "downloads": 7200000,
+    "ratings": [
+      { "name": "1 star", "count": 4400 },
+      { "name": "2 star", "count": 5200 },
+      { "name": "3 star", "count": 8900 },
+      { "name": "4 star", "count": 19600 },
+      { "name": "5 star", "count": 29300 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "FitMeals",
+    "companyName": "NutriPro",
+    "id": 18,
+    "description": "A meal-planning app that provides calorie tracking, diet plans, and personalized nutritional guidance.",
+    "size": 40,
+    "reviews": 27800,
+    "ratingAvg": 4.7,
+    "downloads": 1600000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 960 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 5700 },
+      { "name": "5 star", "count": 19600 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1554151228-14d9def656e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "PhotoVault",
+    "companyName": "SecureSoft",
+    "id": 19,
+    "description": "A secure gallery app that protects photos and videos with encryption, cloud sync, and privacy controls.",
+    "size": 31,
+    "reviews": 14600,
+    "ratingAvg": 4.4,
+    "downloads": 830000,
+    "ratings": [
+      { "name": "1 star", "count": 410 },
+      { "name": "2 star", "count": 560 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 3800 },
+      { "name": "5 star", "count": 7530 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080",
+    "title": "StockTrack",
+    "companyName": "TradeX Labs",
+    "id": 20,
+    "description": "A real-time stock monitoring app offering charts, alerts, news feeds, and portfolio insights for investors.",
+    "size": 53,
+    "reviews": 38200,
+    "ratingAvg": 4.6,
+    "downloads": 2900000,
+    "ratings": [
+      { "name": "1 star", "count": 1300 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 3500 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 22600 }
+    ]
+  }
+]

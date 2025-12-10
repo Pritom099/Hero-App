@@ -1,6 +1,12 @@
 import React from 'react';
+import useApps from '../hooks/useApp';
+import AppCard from '../Components/AppCard';
+import { Link } from 'react-router';
 
 const Home = () => {
+    const {products} = useApps()
+    console.log(products)
+    const featuredApps = products.slice(0,8);
     return (
         <div>
             <div className='flex flex-col items-center justify-center my-5'>
@@ -34,6 +40,22 @@ const Home = () => {
                             <p>31 More Will Launch</p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className='flex flex-col items-center justify-center my-10'>
+                <h1 className='text-3xl font-bold mb-3'>Trending Apps</h1>
+                <p className='text-gray-600'>Explore All Trending Apps on the Market developed by us</p>
+            </div>
+            <div>
+                <div>
+                    {
+                        featuredApps.map(product => (
+                            <AppCard key={product.id} product={product}></AppCard>
+                        ))
+                    }
+                </div>
+                <div>
+                    <Link className='btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white'>Show All</Link>
                 </div>
             </div>
         </div>
