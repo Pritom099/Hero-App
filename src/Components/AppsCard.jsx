@@ -1,25 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-const AppsCard = () => {
+const AppsCard = ({product}) => {
+    const{image, title, companyName, ratingAvg, downloads, id} = product
     return (
-        <div className="card bg-base-100 w-96 shadow-sm">
-            <figure>
-                <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+        <Link to={`/product/${id}`} className="card bg-base-100  shadow-xl">
+            <figure className='h-48 overflow-hidden'>
+                <img className='w-full object-cover'
+                    src={image}
                     alt="Shoes" />
             </figure>
             <div className="card-body">
                 <h2 className="card-title">
-                    Card Title
-                    <div className="badge badge-secondary">NEW</div>
+                    {companyName} - {title}
                 </h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
+                <div className="card-actions justify-between">
+                    <div className="bg-gray-200 badge badge-outline p-3 text-green-600 font-bold border-none"><img className='h-4' src="/public/icon-downloads.png" alt="" />{downloads}M</div>
+                    <div className="bg-orange-200 badge badge-outline p-3 text-orange-600 font-bold border-none"><img className='h-4' src="/public/icon-ratings.png" alt="" />{ratingAvg}</div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
