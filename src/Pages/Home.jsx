@@ -6,7 +6,7 @@ import AppsCard from '../Components/AppsCard';
 
 const Home = () => {
     const { products } = useApps()
-    console.log(products)
+    // console.log(products)
     const featuredApps = products.slice(0, 8);
     return (
         <div>
