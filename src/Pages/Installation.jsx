@@ -2,22 +2,29 @@ import React, { useEffect, useState } from 'react';
 
 const Installation = () => {
     const [installation, setInstallation] = useState([])
-    const[sortOrder, setSortOrder] = useState('none')
+    const [sortOrder, setSortOrder] = useState('none')
     useEffect(() => {
         const savedList = JSON.parse(localStorage.getItem('installation'))
         if (savedList) setInstallation(savedList)
     }, [])
 
-    if(!installation.length) return <p className='text-3xl font-semibold'>No Data Available</p>
+    if (!installation.length) {
+        return (
+            <div className="text-4xl font-semibold flex  items-center justify-center">
+                No Apps <span className=' text-blue-500 ml-2'>Available</span>
+            </div>
+        );
+    }
+
 
     const sortedItem = (() => {
-        if(sortOrder === "rating-asc"){
-            return [...installation].sort((a,b) => a.ratingAvg - b.ratingAvg)
+        if (sortOrder === "rating-asc") {
+            return [...installation].sort((a, b) => a.ratingAvg - b.ratingAvg)
         }
-        else if(sortOrder === "rating-desc"){
-            return [...installation].sort((a,b)=> b.ratingAvg - a.ratingAvg)
+        else if (sortOrder === "rating-desc") {
+            return [...installation].sort((a, b) => b.ratingAvg - a.ratingAvg)
         }
-        else{
+        else {
             return installation
         }
     })()
@@ -43,9 +50,9 @@ const Installation = () => {
                 <div>
                     <label className='form-control w-full max-w-xs'>
                         <select className='select select-bordered border-blue-400' value={sortOrder} onChange={e => setSortOrder(e.target.value)}>
-                           <option value="none">Short by rating</option>
-                           <option value="rating-asc">Low-&gt;High</option>
-                           <option value="rating-desc">High-&gt;Low</option>
+                            <option value="none">Short by rating</option>
+                            <option value="rating-asc">Low-&gt;High</option>
+                            <option value="rating-desc">High-&gt;Low</option>
                         </select>
                     </label>
                 </div>
