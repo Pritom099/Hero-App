@@ -3,6 +3,12 @@ import { Github } from 'lucide-react';
 import React from 'react';
 import { Link, NavLink } from 'react-router';
 
+const navActive = ({ isActive }) =>
+  isActive
+    ? "border-b-2 border-purple-700 text-purple-700"
+    : "hover:text-purple-700";
+
+
 const Navbar = () => {
     return (
         <div className="navbar bg-base-100 shadow-sm">
@@ -26,9 +32,9 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><NavLink to='/'>Home</NavLink></li>
-                    <li><NavLink to='/apps'>Apps</NavLink></li>
-                    <li><NavLink to='/installation'>Installation</NavLink></li>
+                    <li><NavLink to='/' className={navActive}>Home</NavLink></li>
+                    <li><NavLink to='/apps' className={navActive}>Apps</NavLink></li>
+                    <li><NavLink to='/installation' className={navActive}>Installation</NavLink></li>
                 </ul>
             </div>
 
