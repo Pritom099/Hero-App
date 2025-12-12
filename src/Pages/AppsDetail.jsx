@@ -12,7 +12,21 @@ const AppsDetail = () => {
     const { image, title, companyName, ratingAvg, downloads, reviews, description } = product || {}
 
     const handleAddtoInstallation = () => {
-        
+        const existingList = JSON.parse(localStorage.getItem("installation"))
+        let updatedList = []
+        if(existingList){
+            const isDuplicate = existingList.some( p => p.id === product.id)
+            if(isDuplicate){
+                alert("SORRY, This is already installed!!!")
+            }
+            else{
+                updatedList = [...existingList, product]
+            }
+        }
+        else{
+            updatedList.push(product)
+        }
+        localStorage.setItem("installation",JSON.stringify(updatedList))
     }
 
 
@@ -47,7 +61,7 @@ const AppsDetail = () => {
                         </div>
                     </div>
                     <div className="card-actions mt-2">
-                        <button className="btn btn-success text-white">Install Now (300MB)</button>
+                        <button onClick={handleAddtoInstallation} className="btn btn-success text-white">Install Now (300MB)</button>
                     </div>
                 </div>
             </div>

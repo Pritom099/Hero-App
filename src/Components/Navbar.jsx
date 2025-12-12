@@ -1,3 +1,5 @@
+
+import { Github } from 'lucide-react';
 import React from 'react';
 import { Link, NavLink } from 'react-router';
 
@@ -31,7 +33,7 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-end">
-                <Link className="btn btn-primary">Contribute</Link>
+                <Link to='https://github.com/Pritom099' target='_blank' className="btn btn-primary"><Github className='h-5' /> Contribute</Link>
             </div>
         </div >
     );
