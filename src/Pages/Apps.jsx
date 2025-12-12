@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import useApps from '../hooks/useApp';
 import AppsCard from '../Components/AppsCard';
+import ErrorApps from '../Components/ErrorApps';
 
 const Apps = () => {
     const [search, setSearch] = useState('')
@@ -8,6 +9,12 @@ const Apps = () => {
 
     const term = search.trim().toLocaleLowerCase()
     const searchedApps = term ? products.filter(product => product.companyName.toLocaleLowerCase().includes(term)) : products
+
+    if(!searchedApps.length){
+        return (
+            <ErrorApps></ErrorApps>
+        )
+    }
 
     return (
         <div className='mx-10'>

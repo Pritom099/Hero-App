@@ -4,11 +4,15 @@ import Home from "../Pages/Home";
 import Apps from "../Pages/Apps";
 import Installation from "../Pages/Installation";
 import AppsDetail from "../Pages/AppsDetail";
+import ErrorPage from "../Pages/ErrorPage";
+import ErrorApps from "../Components/ErrorApps";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element:<MainLayout></MainLayout>,
+        errorElement:<ErrorPage></ErrorPage>,
+        hydrateFallbackElement: <p>Loading....</p>,
         children: [
             {
                 index: true,
@@ -26,6 +30,7 @@ const router = createBrowserRouter([
                 path:'/product/:id',
                 element:<AppsDetail></AppsDetail>,
             },
+
         ],
     },
 ])
