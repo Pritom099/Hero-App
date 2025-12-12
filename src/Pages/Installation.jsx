@@ -2,12 +2,25 @@ import React, { useEffect, useState } from 'react';
 
 const Installation = () => {
     const [installation, setInstallation] = useState([])
-    const[sortOrder, serSortOrder] = useState('none')
+    const[sortOrder, setSortOrder] = useState('none')
     useEffect(() => {
         const savedList = JSON.parse(localStorage.getItem('installation'))
         if (savedList) setInstallation(savedList)
-    })
+    }, [])
 
+    if(!installation.length) return <p className='text-3xl font-semibold'>No Data Available</p>
+
+    const sortedItem = (() => {
+        if(sortOrder === "rating-asc"){
+            return [...installation].sort((a,b) => a.ratingAvg - b.ratingAvg)
+        }
+        else if(sortOrder === "rating-desc"){
+            return [...installation].sort((a,b)=> b.ratingAvg - a.ratingAvg)
+        }
+        else{
+            return installation
+        }
+    })()
 
     const handleRemove = id => {
         const existingList = JSON.parse(localStorage.getItem("installation"))
@@ -29,17 +42,17 @@ const Installation = () => {
                 </div>
                 <div>
                     <label className='form-control w-full max-w-xs'>
-                        <select className='select select-bordered border-blue-400'>
-                           <option value="none">Short by price</option>
-                           <option value="">Low-&gt;High</option>
-                           <option value="">High-&gt;Low</option>
+                        <select className='select select-bordered border-blue-400' value={sortOrder} onChange={e => setSortOrder(e.target.value)}>
+                           <option value="none">Short by rating</option>
+                           <option value="rating-asc">Low-&gt;High</option>
+                           <option value="rating-desc">High-&gt;Low</option>
                         </select>
                     </label>
                 </div>
             </div>
             <div className='space-y-3'>
                 {
-                    installation.map(p => (
+                    sortedItem.map(p => (
                         <div key={p.id} className="card card-side bg-base-100 shadow-xl">
                             <figure>
                                 <img className='w-40 h-28 object-cover p-2 rounded-2xl'
