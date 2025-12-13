@@ -2,17 +2,22 @@ import React, { useState } from 'react';
 import useApps from '../hooks/useApp';
 import AppsCard from '../Components/AppsCard';
 import ErrorApps from '../Components/ErrorApps';
+import LoadingSpinner from '../Components/LoadingSpinner';
 
 const Apps = () => {
     const [search, setSearch] = useState('')
-    const { products } = useApps()
+    const { products, loading } = useApps()
 
     const term = search.trim().toLocaleLowerCase()
     const searchedApps = term ? products.filter(product => product.companyName.toLocaleLowerCase().includes(term)) : products
 
-    if(!searchedApps.length){
+    if (loading) {
+        return <LoadingSpinner />
+    }
+
+    if (!searchedApps.length) {
         return (
-            <ErrorApps></ErrorApps>
+            <ErrorApps onBack={() => setSearch('')}></ErrorApps>
         )
     }
 
@@ -32,13 +37,22 @@ const Apps = () => {
                     </label>
                 </div>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
+            <div>
                 {
-                    searchedApps.map(product => (
-                        <AppsCard key={product.id} product={product}></AppsCard>
-                    ))
+                    loading ? (
+                        <LoadingSpinner></LoadingSpinner>
+                    ) : (
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
+                            {
+                                searchedApps.map(product => (
+                                    <AppsCard key={product.id} product={product}></AppsCard>
+                                ))
+                            }
+                        </div>
+                    )
                 }
             </div>
+
         </div>
     );
 };

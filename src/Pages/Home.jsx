@@ -2,10 +2,11 @@ import React from 'react';
 import useApps from '../hooks/useApp';
 import { Link } from 'react-router';
 import AppsCard from '../Components/AppsCard';
+import LoadingSpinner from '../Components/LoadingSpinner';
 
 
 const Home = () => {
-    const { products } = useApps()
+    const { products, loading } = useApps()
     // console.log(products)
     const featuredApps = products.slice(0, 8);
     return (
@@ -48,13 +49,20 @@ const Home = () => {
                 <p className='text-gray-600'>Explore All Trending Apps on the Market developed by us</p>
             </div>
             <div>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-5'>
-                    {
-                        featuredApps.map(product => (
-                            <AppsCard key={product.id} product={product}></AppsCard>
-                        ))
-                    }
-                </div>
+                {
+                    loading ? (
+                        <LoadingSpinner></LoadingSpinner>
+                    ) : (
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-5'>
+                            {
+                                featuredApps.map(product => (
+                                    <AppsCard key={product.id} product={product}></AppsCard>
+                                ))
+                            }
+                        </div>
+                    )
+                }
+
                 <div className='flex items-center justify-center mt-7'>
                     <Link to='/apps' className='btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white'>Show All</Link>
                 </div>

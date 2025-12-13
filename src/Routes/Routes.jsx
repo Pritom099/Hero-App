@@ -30,6 +30,10 @@ const router = createBrowserRouter([
                 path:'/product/:id',
                 element:<AppsDetail></AppsDetail>,
             },
+            {
+                path: '/apps-error',
+                element: <ErrorApps></ErrorApps>,
+            },
 
         ],
     },
