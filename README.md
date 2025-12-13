@@ -1,1 +1,1 @@
-akno ready hoy nai
+https://splendorous-hero-app.netlify.app/
